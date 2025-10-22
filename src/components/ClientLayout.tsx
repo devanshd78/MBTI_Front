@@ -20,7 +20,6 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
     <RouteLoaderProvider>
       <div className="relative min-h-screen overflow-x-hidden">
         <ParticleBackground />
-        <MusicPlayer />
 
         <AnimatePresence mode="wait">
           <motion.main
