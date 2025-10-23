@@ -9,7 +9,6 @@ const cards = [
   { href: '/admin/results', title: 'Results', icon: ClipboardList, hint: 'Browse submissions' },
   { href: '/admin/mbti', title: 'MBTI', icon: Brain, hint: 'Manage personality profiles' },
 ];
-
 export default function Page() {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
