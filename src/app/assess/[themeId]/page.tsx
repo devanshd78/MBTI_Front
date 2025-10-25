@@ -1,9 +1,8 @@
-// app/assess/[themeId]/page.tsx
 'use client';
 
 import { useParams, useSearchParams, useRouter } from 'next/navigation';
-import ThemeAssessment from '@/components/ThemeAssessment';
 import { useEffect } from 'react';
+import ThemeAssessment from '@/components/ThemeAssessment';
 import { useRouteLoader } from '@/components/RouterLoader';
 
 export default function Page() {
@@ -28,11 +27,8 @@ export default function Page() {
         routeLoader.start();
         const q = new URLSearchParams();
         if (name) q.set('name', name);
-        if (rid) {
-          q.set('rid', rid);
-        } else if (fallbackType) {
-          q.set('type', fallbackType);
-        }
+        if (rid) q.set('rid', rid);
+        else if (fallbackType) q.set('type', fallbackType);
         router.push(`/result?${q.toString()}`);
       }}
     />
