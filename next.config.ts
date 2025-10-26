@@ -2,9 +2,9 @@
 const nextConfig = {
   async rewrites() {
     return [
-      { source: '/api/:path*', destination: 'https://mranalini.in/api/:path*' },
+      { source: '/api/:path*', destination: 'http://localhost:4000/:path*' },
 
-      { source: '/media/:id', destination: 'https://mranalini.in/api/media/:id' },
+      { source: '/media/:id', destination: 'http://localhost:4000/media/:id' },
     ];
   },
 };

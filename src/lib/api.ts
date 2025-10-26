@@ -13,7 +13,7 @@ function buildUrl(endpoint: string, params?: Record<string, any>) {
     `${API_BASE}${endpoint.startsWith('/') ? endpoint : `/${endpoint}`}`,
     // make it relative to current origin (works on server/client)
     typeof window === 'undefined'
-      ? 'https://mranalini.in' // SSR fallback (won't be used by the browser)
+      ? 'http://localhost:4000' // SSR fallback (won't be used by the browser)
       : window.location.origin
   );
   if (params) {
