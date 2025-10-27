@@ -12,10 +12,9 @@ export default function MusicPlayer() {
     created.current = true;
 
     const howl = new Howl({
-      src: ['https://assets.mixkit.co/active_storage/sfx/2469/2469-preview.mp3'],
+      src: './Home.mp3',
       loop: true,
-      volume: 0.3,
-      // html5: true, // <- prefer WebAudio unless streaming
+      volume: 0.6,
       autoplay: false, // we'll start on first user click
     });
 
